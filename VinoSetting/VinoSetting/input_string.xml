@@ -1,0 +1,9 @@
+<key name='enabled' type='b'>
+	<summary>Enable remote access to the desktop</summary>
+	<description>
+		If true, allows remote access to the desktop via the RFB
+		protocol. Users on remote machines may then connect to the
+		desktop using a VNC viewer.
+	</description>
+	<default>true</default>
+</key>
