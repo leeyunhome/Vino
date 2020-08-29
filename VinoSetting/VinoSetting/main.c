@@ -122,7 +122,7 @@ desktop using a VNC viewer.\
 
     printf("total_buffer : %s\n", total_buffer);
 
-    FILE* fw = fopen("16.xml", "w");
+    FILE* fw = fopen("org.gnome.Vino.gschema.xml", "w");
     if (fw == NULL)
     {
         printf("Cannot open file.\n");
@@ -155,9 +155,14 @@ desktop using a VNC viewer.\
         exit(1);
     }
 
-
     free(total_buffer);
+    total_buffer = NULL;
+
     free(buffer);
+    buffer = NULL;
+
+    free(tail_buffer);
+    tail_buffer = NULL;
 
     return 0;
 }
